@@ -8,6 +8,7 @@ feature 'When a user visits a snack show page' do
     snack_2 = dons.snacks.create(name: 'Fritos', price: '200')
     expected_avg = 300
     types_of_snacks = 2
+
     visit snack_path(snack_1)
 
     expect(page).to have_content(snack_1.name)
