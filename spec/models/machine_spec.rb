@@ -12,8 +12,8 @@ describe Machine, type: :model do
       machine.snacks.create(name: 'Cheetos', price: '400')
       machine.snacks.create(name: 'Fritos', price: '200')
       expected_avg = 300
-
-      expect(Machine.average_snack_price).to eq(expected_avg)
+      
+      expect(machine.average_snack_price).to eq(expected_avg)
     end
   end
 end
